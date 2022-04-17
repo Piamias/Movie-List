@@ -28,7 +28,7 @@ function MovieList(props : {movies: any, handleLike : any, like : boolean}) {
 function SearchBar(props:{search : string, setSearch : any}) {
 	return <>
 		<div className="flex justify-center mt-16">
-			<input className="rounded-full px-4 py-4 bg-zinc-100 text-center text-xl font-movie border-2 border-zinc-800 w-96" 
+			<input className="rounded-full px-4 py-4 bg-zinc-100 text-center text-xl font-mono border-2 border-zinc-800 w-96" 
 					value={props.search} placeholder="Search movies..."
 					onChange={(e) => props.setSearch(e.target.value)}
 			/>
@@ -42,7 +42,7 @@ function Header() {
 		<div className="flex justify-center items-center border-b-8 border-t-8 border-double  border-zinc-800 bg-zinc-200 py-8">
 			<div className="bg-red-600 rounded-full w-20 h-20 mr-4 shadow-lg shadow-red-400
 							hover:shadow-xl hover:shadow-red-500 hover:scale-110 duration-700"/>
-			<div className="text-zinc-200 font-movie text-9xl tracking-wider text-shadow-xl">
+			<div className="text-zinc-200 font-mono text-9xl tracking-wider text-shadow-xl">
 				REC
 			</div>
 		</div>
@@ -52,7 +52,7 @@ function Header() {
 function Movies() {
 	return <>
 		<div className="flex justify-center items-center border-b-8 border-t-8 border-double  border-zinc-800 bg-zinc-200">
-			<div className="text-zinc-200 font-movie text-6xl tracking-wider text-shadow-xl py-7">
+			<div className="text-zinc-200 font-mono text-6xl tracking-wider text-shadow-xl py-7">
 				MOVIES
 			</div>
 		</div>
@@ -62,7 +62,7 @@ function Movies() {
 function YourList() {
 	return <>
 		<div className="flex justify-center items-center border-b-8 border-t-8 border-double  border-zinc-800 bg-zinc-200">
-			<div className="text-zinc-200 font-movie text-6xl tracking-wider text-shadow-xl py-7">
+			<div className="text-zinc-200 font-mono text-6xl tracking-wider text-shadow-xl py-7">
 				YOUR LIST
 			</div>
 		</div>
@@ -72,7 +72,7 @@ function YourList() {
 function Footer() {
 	return <>
 		<div className="flex justify-center items-center border-b-8 border-t-8 border-double  border-zinc-800 bg-zinc-200 py-8 grow">
-			<div className="text-zinc-200 font-movie text-6xl tracking-wider text-shadow-xl">
+			<div className="text-zinc-200 font-mono text-6xl tracking-wider text-shadow-xl">
 				CUT
 			</div>
 			<div className="bg-red-600 rounded-full w-12 h-12 ml-4 shadow-lg shadow-red-400
@@ -85,7 +85,7 @@ function Empty(props :{msg : string}) {
 	return <>
 	<div></div>
 		<div className="flex justify-center">
-			<h1 className="text-center font-movie text-xl italic">{props.msg}</h1>
+			<h1 className="text-center font-mono text-xl italic">{props.msg}</h1>
 		</div>
 	</>
 }
